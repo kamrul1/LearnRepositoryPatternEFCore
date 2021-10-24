@@ -13,7 +13,7 @@ In this solution we setup 5 projects, this is their purpose in general terms:
   - This seperates out all the interfaces for the projects
   - This only references `Entities` project
 - Entities
-  - These are involved in the database context
+  - These are involved in the database context and map tables to classes.
   - This does not reference any other project
 - Repository
   - This is where the Contract project interfaces are implemented.
@@ -136,6 +136,7 @@ Add models
 
 - Account.cs
 - Owner.cs
+- RepositoryContext.cs - links to DbContext
 
 
 
@@ -244,7 +245,7 @@ namespace Repository
 
 Let’s imagine if inside a controller we need to collect all the Owners 
 and to collect only the certain Accounts (for example Domestic ones). 
-We would need to instantiate OwnerRepository and AccountRepository classes 
+We would need to instantiate `OwnerRepository` and `AccountRepository` classes 
 and then call the FindAll and FindByCondition methods
 
 Maybe it’s not a problem when we have only two classes, but what if we 

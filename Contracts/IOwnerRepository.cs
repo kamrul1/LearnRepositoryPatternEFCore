@@ -9,5 +9,8 @@ namespace Contracts
 {
     public interface IOwnerRepository : IRepositoryBase<Owner>
     {
+        IEnumerable<Owner> GetAllOwners();
+        Owner GetOwnerById(string ownerId);
+        Owner GetOwnerWithDetails(string ownerId);
     }
 }

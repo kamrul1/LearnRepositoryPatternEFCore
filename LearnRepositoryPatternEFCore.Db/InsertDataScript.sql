@@ -1,7 +1,6 @@
 ﻿USE [LearnRepositoryPatternEFCore.Db]
 GO
 
-
 TRUNCATE table dbo.Owner;
 TRUNCATE table dbo.Account;
 
