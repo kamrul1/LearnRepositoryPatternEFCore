@@ -21,7 +21,8 @@ In this solution we setup 5 projects, this is their purpose in general terms:
 - LearnRepositoryPatternEFCore.Db
   - These are the database tables and dataset scripts
 
-
+You may want to view the course [Youtube video](https://youtu.be/S4YDarQBkiM), 
+if you need a quick refresher.  I've used this pattern in over a 100 projects.
 
 
 
